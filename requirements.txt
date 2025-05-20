@@ -1,0 +1,6 @@
+openai
+json_repair
+tqdm
+modelscope
+evalscope
+pandas

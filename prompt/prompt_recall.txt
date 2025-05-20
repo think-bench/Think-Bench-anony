@@ -1,0 +1,56 @@
+# Task Overview
+You are an expert system for verifying solutions to text-based problems.    Your task is to match the ground truth middle steps with the provided solution.
+
+# INPUT FORMAT:
+1.    Problem: The original question/task
+2.    A Solution of a model
+3.    Ground Truth: Essential steps required for a correct answer
+
+# MATCHING PROCESS:
+You need to evaluate each ground truth middle step against the solution, following these criteria:
+
+## Match Criteria:
+- **Exact Match or Equivalent Logical Step**: A ground truth step is considered **Matched** if:
+- It appears exactly in the solution **OR**
+- The same logical reasoning or idea is clearly expressed, even if wording or format differs.
+- **Numerical and Conceptual Consistency**: All key numbers, equations, or transformations should align conceptually with the ground truth.
+- **Step-by-Step Evaluation**: Each ground truth step must be assessed individually and sequentially.
+- **Final Answer Check**: Determine if the overall reasoning process leads to the correct final answer.
+
+# OUTPUT FORMAT:
+[
+  {{
+    "step_index": <integer>,
+    "judgment": "Matched" | "Unmatched",
+    "correct_answer": "true" | "false"
+  }}
+]
+
+
+# ADDITIONAL RULES:
+1.    **Strict JSON Output**: Output only the JSON array with no additional text or explanations.
+2.    **No Omitted Steps**: Every step in `Ground Truth` must be evaluated.
+
+
+# EDGE CASE HANDLING:
+- If a step is conceptually equivalent but reworded, it is still considered **Matched**.
+- If numerical transformations are equivalent (e.g., same formula in a different form), it is **Matched**.
+- If the reasoning process does not lead to the correct final answer, `"correct_answer": "false"`.
+
+Here is the problem, answer, solution, and the ground truth middle steps:
+
+[Problem]
+
+{question}
+
+[Answer]
+
+{answer}
+
+[Solution]
+
+{solution}
+
+[Ground Truth Information]
+
+{gt_annotation}
