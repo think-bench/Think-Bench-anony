@@ -4,7 +4,11 @@ Official repository for "THINK-Bench: Evaluating Thinking Efficiency and Chain-o
 
 For more details, please refer to the project page with dataset exploration and visualization tools.
 
-[[🤗Huggingface Dataset](https://huggingface.co/datasets/zhiyuan218/Think-Bench)] [[ModelScope Dataset](https://www.modelscope.cn/datasets/zhiyuan218/Think-Bench)] [[Visualization](https://huggingface.co/datasets/zhiyuan218/Think-Bench/viewer)]
+[[📖 Paper](https://arxiv.org/pdf/2505.22113)] [[🤗Huggingface Dataset](https://huggingface.co/datasets/zhiyuan218/Think-Bench)] [[ModelScope Dataset](https://www.modelscope.cn/datasets/zhiyuan218/Think-Bench)] [[Visualization](https://huggingface.co/datasets/zhiyuan218/Think-Bench/viewer)]
+
+##  News
+- **[2025.05.28]** We are very proud to launch Think-Bench, the first comprehensive Think efficiency and CoT quality evaluation benchmark in large reasoning models! We release the [arxiv paper](https://arxiv.org/pdf/2505.22113) and all data samples in [huggingface dataset](https://huggingface.co/datasets/zhiyuan218/Think-Bench) and [ModelScope Dataset](https://www.modelscope.cn/datasets/zhiyuan218/Think-Bench).
+
 
 ## 👀 About Think-Bench
 
@@ -127,7 +131,21 @@ To calculate the nine metrics (Efficiency, Reflection Tokens, Useful Tokens, Tok
      python final_score/recall.py --cache_dir cache/recall --save_path final_results
      ```
      
+## Citation
 
+If you find **Think-Bench** useful for your research and applications, please kindly cite using this BibTeX:
+
+```latex
+@misc{li2025thinkbench,
+      title={THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models}, 
+      author={Zhiyuan Li and Yi Chang and Yuan Wu},
+      year={2025},
+      eprint={2505.22113},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.22113}, 
+}
+```
 
 ## Acknowledgements
 Our project referred to the following repositories:
