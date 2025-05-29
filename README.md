@@ -12,7 +12,7 @@ For more details, please refer to the project page with dataset exploration and 
 
 ## 👀 About Think-Bench
 
-Reasoning models have made remarkable progress in complex tasks, outperforming traditional large language models.  However, the problem of overthinking is prevalent, severely limiting computational efficiency as models generate excessive and redundant tokens with little contribution to answer accuracy, especially in simple tasks, leading to significant resource waste.
+Reasoning models have achieved significant advancements in handling complex tasks, often surpassing traditional large language models.  However, the challenge of overthinking remains common, significantly hindering computational efficiency.  This issue arises as models produce an excess of redundant tokens that contribute little to the accuracy of answers, particularly in simpler tasks, resulting in considerable waste of resources.
 
 <p align="center">
     <img src="image/pipeline.png" width="90%"> <br>
